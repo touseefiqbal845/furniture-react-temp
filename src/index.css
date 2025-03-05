@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: theme('fontFamily.secondary'); 
+  color: theme('colors.text');
+
+
+  }
+
+@layer base {
+body {
+  background-color: var(--primary-background-color); 
+}
+
+h1 {
+  font-size: theme('fontSize.xl');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.primary'); 
+  letter-spacing: theme('letterSpacing.primary');
+  line-height: theme('lineHeight.tertiary');
+}
+
+h2 {
+  font-size: theme('fontSize.large');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.primary'); 
+  letter-spacing: theme('letterSpacing.primary');
+  font-weight: theme('fontWeight.primary');
+}
+
+h3 {
+  font-size: theme('fontSize.medium');
+  color: theme('colors.primary');
+  font-family: theme('fontFamily.primary');
+  letter-spacing: theme('letterSpacing.primary');
+}
+
+p {
+  font-size: theme('fontSize.small');
+  color: theme('colors.paragraph');
+  font-family: theme('fontFamily.secondary'); 
+  font-weight: theme('fontWeight.primary');
+  line-height: theme('lineHeight.primary');
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: theme('fontSize.medium'); 
+  }
+  h1 {
+    font-size: theme('fontSize.medium'); 
+  }
+}
+
+}

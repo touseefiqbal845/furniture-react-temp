@@ -1,0 +1,11 @@
+{
+    "rewrites": [
+      { "source": "/checkout", "destination": "/" },
+      { "source": "/cart", "destination": "/" },
+      { "source": "/products", "destination": "/" },
+      { "source": "/product", "destination": "/" }
+    ],
+    "redirects": [],
+    "headers": []
+  }
+  
